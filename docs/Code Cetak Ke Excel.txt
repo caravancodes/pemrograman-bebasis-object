@@ -1,0 +1,49 @@
+        FileOutputStream fileOut = null;
+        try {
+            TableModel tableModel = tabel_checkin.getModel();
+            List<String> header = new ArrayList<String>();
+            for (int i = 0; i < tableModel.getColumnCount(); i++) {
+                header.add(tableModel.getColumnName(i));
+            }
+            List<List<Object>> data = new ArrayList<List<Object>>();
+            for (int i = 0; i < tableModel.getRowCount(); i++) {
+                List<Object> row = new ArrayList<Object>();
+                for (int j = 0; j < tableModel.getColumnCount(); j++) {
+                    row.add(tableModel.getValueAt(i, j));
+                }
+                data.add(row);
+            }
+            HSSFWorkbook workbook = new HSSFWorkbook();
+            HSSFSheet sheet = workbook.createSheet();
+            HSSFRow rowHeader = sheet.createRow(0);
+            for (int i = 0; i < header.size(); i++) {
+                HSSFCell rowCell = rowHeader.createCell(i);
+                rowCell.setCellValue(header.get(i));
+            }
+            for (int i = 0; i < data.size(); i++) {
+                HSSFRow row = sheet.createRow(i + 1);
+                List<Object> dataRow = data.get(i);
+                for (int j = 0; j < dataRow.size(); j++) {
+                    HSSFCell cell = row.createCell(j);
+                    cell.setCellValue(dataRow.get(j).toString());
+                }
+            }
+            String tempFile = "D:\\ datacheckin.xls ";
+            File fileTemp = new File(tempFile);
+            if (fileTemp.exists()) {
+                fileTemp.delete();
+            }
+            fileOut = new FileOutputStream(tempFile);
+            workbook.write(fileOut);
+            fileOut.close();
+            Desktop.getDesktop().open(new File(tempFile));
+        } catch (IOException ex) {
+            Logger.getLogger(List_room.class.getName()).log(Level.SEVERE, null, ex);
+       
+        } finally {
+            try {
+                fileOut.close();
+            } catch (IOException ex) {
+                Logger.getLogger(List_room.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }

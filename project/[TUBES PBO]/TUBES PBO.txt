@@ -1,0 +1,26 @@
+#APLIKASI KUA
+datanya???
+
+Nama
+Pria / Wanita
+Primbon
+Weton
+KTP
+Kemampuan Penghulu
+Tanggal Nikah
+Tempat Nikah
+Data Penghulu [LOGIN]-> penghulu
+-)Cetak Data Nikah
+-)biaya administrasi
+-)
+
+#Aplikasi Cuci Mobil/Motor
+
+nama pemilik kendaraan
+nomor plat
+type kendaraan
+merk/jenis
+nomor hp pemilik
+harga/promo
+alamat pemilik
+beverage/makanan

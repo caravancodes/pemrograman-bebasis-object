@@ -1,0 +1,28 @@
+Data Untuk Nikah Model N-1
+
+PRIA DAN WANITA
+a. kantor desa/kelurahan
+b. kecamatan
+c. kabupaten/kota
+
+- Surat keterangan untuk nikah
+- nomor : 
+
+yang bertanda tangan di bawah ini menerangkan dengan sesungguhnya bahwa :
+1. Nama Lengkap dan alias
+2. Jenis Kelamin
+3. Tempat Tanggal Lahir
+4. Warganegara
+5. Agama
+6. Pekerjaan
+7. Tempat Tinggal
+8. Bin/Binti
+9. Status Perkawinan
+- Jika pria, terangkan jejaka, duda atau beristri dan berapa istrinya
+- Jika wanita, terangkan perawan atau janda
+10. Nama istri/Suami terdahulu
+demikianlah, surat keterangan ini di buat degnan mengingat sumpah jabatan dan untuk di gunakan seperlunya
+
+#Kepala Desa/Kelurahan
+ttd
+..............*)

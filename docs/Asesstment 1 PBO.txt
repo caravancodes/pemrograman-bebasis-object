@@ -1,0 +1,14 @@
+soal no 1. 
+a. pengertian dari Diagram Class
+Diagram kelas adalah inti dari proses pemodelan objek yang terdiri dari kumpulan kelas-kelas objek. 
+b. Objek
+objek merupakan instansiasi dari suatu class yang telah di buat sebelumnya
+c. Enkapsulasi
+proses pemaketan data objek dan method methodnya. manfaat enkapsulasi yaitu penyembunyian data
+d. Asosiasi
+Asosiasi merupakan hubungan antara dua kelas  tidak konseptual terkait tetapi dalam konteks masalah perlu memanfaatkan layanan masing-masing 
+
+e. Agregasi
+Agregasi merupakan hubungan antara dua kelas yang lebih ketat dan terdapat hubungan bagian (part) dan keseluruhan (whole). 
+f. Komposisi
+Komposisi  merupakan bentuk khusus dari agregasi dimana terdapat hubungan antar kelas yang lebih kuat , karena yang menjadi part (bagian) tidak akan ada tanpa adanya kelas yang menjadi whole.

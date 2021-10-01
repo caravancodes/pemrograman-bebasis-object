@@ -1,0 +1,20 @@
+relasi komposisi
+ -> relasi antar dua class / lebih, misal A dan B, dimana ada instansiasi obyek A di class B
+    atau sebaliknya.
+ -> relasi 'part-of'
+ -> jika class A dihapus maka class B akan bermasalah
+ -> simbol
+
+relasi agregasi
+ -> relasi antar dua class / lebih, misal A dan B, dimana class A menjadi komponen di class B
+    atau sebaliknya.
+ -> relasi 'has a'
+ -> jika class A dihapus maka class B tetap independent
+ -> simbol
+
+relasi asosiasi
+ -> relasi antar dua class / lebih, misal A dan B, dimana class mengirim sebagian atau seluruh 
+    obyek ke class B atau sebaliknya.
+ -> relasi 'use a'
+ -> class A dan B masing-masing independent
+ -> simbol

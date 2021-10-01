@@ -1,0 +1,89 @@
+	
+	DPH1C4	PEMROGRAMAN BERORIENTASI OBYEK
+	
+JDK 7 / 8 - DESKTOP APP
+EDITOR: ECLIPSE, NETBEANS, INTELLIJ, 
+KETERLAMBATAN MAKSIMAL 25 MENIT,
+LAPTOP WAJIB
+RFID WAJIB
+
+KM KELAS -> BENTUK GRUP WA
+-----------------------------------------------
+	MUHAMMAD BARJA SANJAYA, S.T., M.T., OCA.
+	MBS
+	MBARJA@TASS.TELKOMUNIVERSITY.AC.ID
+	08 13 13 14 11 20
+	D3 MANAJEMEN INFORMATIKA
+------------------------------------------------
+
+	NAMA
+
+	NIM
+
+	ASAL
+
+	IMPIAN / CITA"
+
+	MOTTO HIDUP
+
+------------------------------------------------
+
+MATERI
+ . OBJECT & CLASS
+ . ENKAPSULASI
+ . RELASI ANTAR CLASS
+ . POLIMORFISME
+ . INHERITANCE
+ . EXCEPTION HANDLING
+ . MULTI-THREAD (?)
+ . VISUAL GRAPHIC - FORM
+
+--------------------------------------------
+review
+
+
+int temp =  0;
+int i = 0;
+while (i < data.length) {
+	int j = data.length-1;
+	while (j > 0) {
+		if (data[j] < data[j - 1]) {
+			temp =  data [j];
+			data[j] =  data[j - 1];
+			data[j - 1] =  temp;
+		} 
+		j--;
+	}
+	i++;
+}
+---------------------------------------------------
+int temp =  0;
+int i = 0;
+do {
+	int j = data.length-1;
+	do {
+		if (data[j] < data[j - 1]) {
+			temp =  data [j];
+			data[j] =  data[j - 1];
+			data[j - 1] =  temp;
+		} 
+		j--;
+	} while (j > 0);
+	i++;
+} while (i < data.length);
+===========================================================
+
+		for (int i = 0; i < data.length; i++) {
+			System.out.println(data[i]);
+		}
+
+		int i =  0;
+ 		while (i < data.length) {
+			S............
+			i++;
+		}
+		int i =  0;
+ 		do {
+			S............
+			i++;
+		} while (i < data.length);

@@ -1,0 +1,97 @@
+/*
+ * Muhammad Faisal Amir
+ * id.amirisback.bandung
+ * Copyright 2017
+ */
+package perbaikan;
+
+/**
+ *
+ * @author Faisal Amir
+ */
+public class ArrayKita {
+    private int index;
+    Matkul []mk;
+    private int ukuran;
+
+    public ArrayKita(int ukuran) {
+        this.index = -1;
+        this.mk = new Matkul[ukuran];
+        this.ukuran = ukuran;
+        
+    }
+
+    public int getIndex() {
+        return index;
+    }
+
+    public void setIndex(int index) {
+        this.index = index;
+    }
+
+    public Matkul[] getMk() {
+        return mk;
+    }
+
+    public void setMk(Matkul[] mk) {
+        this.mk = mk;
+    }
+
+    public int getUkuran() {
+        return ukuran;
+    }
+
+    public void setUkuran(int ukuran) {
+        this.ukuran = ukuran;
+    }
+    
+    
+    public boolean cekKosong(){
+        return index == -1;
+    }
+    
+    public boolean cekFull(){
+        if ((index+1)==mk.length){
+            System.out.println("Data Full");
+        return true;
+        } else {
+            return false;
+        }
+        
+    }
+    
+    public void tambahData(Matkul c){
+        if (cekFull()){
+            System.out.println("Ga bisa NGISI WEK");
+        } else {
+            index++;
+            mk[index]=c;
+        }
+    }
+    
+    public void baca(){
+        for (int i = 0; i < index; i++) {
+            mk[i].info();
+        }
+    }
+    
+    public void cari(String id){
+        for (int i = 0; i < index; i++) {
+            if(mk[i].getId().equalsIgnoreCase(id)){
+                mk[i].info();
+            }
+        }
+    }
+    
+    public void hapus(){
+        if (cekKosong()) {
+            System.out.println("Apa yang mau dihapus");
+        } else {
+            this.mk[index]=null;
+            index--;
+        }
+    }
+    
+    
+    
+}
